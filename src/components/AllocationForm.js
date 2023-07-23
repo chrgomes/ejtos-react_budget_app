@@ -63,6 +63,8 @@ const AllocationForm = (props) => {
                         required='required'
                         type='number'
                         id='cost'
+                        pattern="[0-9]*"
+                        inputmode="numeric"
                         value={cost}
                         style={{ marginLeft: '2rem' , size: 10}}
                         onChange={(event) => setCost(event.target.value)}>
